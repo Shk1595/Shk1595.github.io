@@ -1,0 +1,15 @@
+:root{--ink:#170d14;--ink2:#22131c;--ink3:#3a2330;--cream:#eedfbf;--cream2:#cdb68c;--maroon:#8e2f3a;--lime:#9fd451;--gold:#f2c03a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--cream);font:19px/1.55 "VT323",ui-monospace,Menlo,Consolas,monospace}
+main{max-width:760px;margin:0 auto;padding:32px 16px 64px}
+h1,h2,h3{font-family:"Silkscreen",ui-monospace,monospace;font-weight:700;letter-spacing:1px;line-height:1.2}
+h1{font-size:34px;margin:8px 0 4px;text-shadow:3px 3px 0 var(--maroon),6px 6px 0 #0b060a}
+h2{font-size:20px;color:var(--gold);margin-top:34px}
+h3{font-size:16px;margin-top:22px}
+a{color:var(--lime)}
+p,li{color:var(--cream)}
+.muted{color:var(--cream2)}
+.card{background:var(--ink2);border:2px solid var(--ink3);padding:14px 16px;margin:14px 0;box-shadow:4px 4px 0 #0b060a}
+.btn{display:inline-block;background:var(--lime);color:var(--ink);text-decoration:none;font-family:"Silkscreen",monospace;padding:8px 14px;border:3px solid var(--ink);box-shadow:3px 3px 0 #0b060a;margin:4px 8px 4px 0}
+table{border-collapse:collapse;width:100%}td,th{border:2px solid var(--ink3);padding:6px 8px;text-align:left;vertical-align:top}
+nav a{margin-right:14px}
