@@ -40,3 +40,8 @@ nav a:first-child{margin-left:0}
 footer{max-width:860px;margin:0 auto;padding:18px 16px 40px;border-top:2px dashed var(--ink3);color:var(--cream2);font-size:17px}
 footer a{margin-right:14px}
 @media (max-width:520px){h1{font-size:28px}.hero h1{font-size:32px}nav a{margin-left:10px;font-size:18px}}
+.media{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 6px 18px;margin:18px -6px 0;-webkit-overflow-scrolling:touch;scrollbar-color:var(--ink3) transparent}
+.media>*{flex:none;width:220px;aspect-ratio:886/1920;object-fit:cover;scroll-snap-align:start;border-radius:22px;border:3px solid var(--ink);box-shadow:5px 5px 0 var(--shadow);background:#000}
+.lead{font-size:23px;margin:14px 0 4px}
+.costs{list-style:none;padding:0;margin:6px 0}.costs li{padding:3px 0}.costs b{color:var(--gold);font-weight:400}
+@media (max-width:520px){.media>*{width:180px}}
