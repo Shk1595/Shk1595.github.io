@@ -1,15 +1,42 @@
-:root{--ink:#170d14;--ink2:#22131c;--ink3:#3a2330;--cream:#eedfbf;--cream2:#cdb68c;--maroon:#8e2f3a;--lime:#9fd451;--gold:#f2c03a}
+:root{--ink:#170d14;--ink2:#22131c;--ink3:#3a2330;--cream:#eedfbf;--cream2:#cdb68c;--maroon:#8e2f3a;--lime:#9fd451;--gold:#f2c03a;--shadow:#0b060a}
 *{box-sizing:border-box}
-body{margin:0;background:var(--ink);color:var(--cream);font:19px/1.55 "VT323",ui-monospace,Menlo,Consolas,monospace}
-main{max-width:760px;margin:0 auto;padding:32px 16px 64px}
-h1,h2,h3{font-family:"Silkscreen",ui-monospace,monospace;font-weight:700;letter-spacing:1px;line-height:1.2}
-h1{font-size:34px;margin:8px 0 4px;text-shadow:3px 3px 0 var(--maroon),6px 6px 0 #0b060a}
-h2{font-size:20px;color:var(--gold);margin-top:34px}
-h3{font-size:16px;margin-top:22px}
-a{color:var(--lime)}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--cream);font:20px/1.5 "VT323",ui-monospace,Menlo,Consolas,monospace;
+  background-image:radial-gradient(circle at 12% 8%,#2a1420 0 2px,transparent 3px),radial-gradient(circle at 88% 22%,#2a1420 0 3px,transparent 4px);background-size:220px 220px,300px 300px}
+main{max-width:860px;margin:0 auto;padding:24px 16px 48px}
+h1,h2,h3,.pix{font-family:"Silkscreen",ui-monospace,monospace;font-weight:700;letter-spacing:1px;line-height:1.2}
+h1{font-size:34px;margin:12px 0 4px;text-shadow:3px 3px 0 var(--maroon),6px 6px 0 var(--shadow);overflow-wrap:anywhere}
+h2{font-size:20px;color:var(--gold);margin:36px 0 10px}
+h3{font-size:16px;margin:22px 0 6px}
+a{color:var(--lime)}a:hover{color:#e2f8b0}
 p,li{color:var(--cream)}
+ul{padding-left:22px}
 .muted{color:var(--cream2)}
-.card{background:var(--ink2);border:2px solid var(--ink3);padding:14px 16px;margin:14px 0;box-shadow:4px 4px 0 #0b060a}
-.btn{display:inline-block;background:var(--lime);color:var(--ink);text-decoration:none;font-family:"Silkscreen",monospace;padding:8px 14px;border:3px solid var(--ink);box-shadow:3px 3px 0 #0b060a;margin:4px 8px 4px 0}
-table{border-collapse:collapse;width:100%}td,th{border:2px solid var(--ink3);padding:6px 8px;text-align:left;vertical-align:top}
-nav a{margin-right:14px}
+.small{font-size:17px}
+.card{background:var(--ink2);border:2px solid var(--ink3);padding:16px 18px;margin:14px 0;box-shadow:5px 5px 0 var(--shadow)}
+.btn{display:inline-block;background:var(--lime);color:var(--ink);text-decoration:none;font-family:"Silkscreen",monospace;font-size:15px;padding:8px 14px;border:3px solid var(--ink);box-shadow:3px 3px 0 var(--shadow);margin:6px 8px 2px 0}
+.btn:hover{color:var(--ink);transform:translate(1px,1px);box-shadow:2px 2px 0 var(--shadow)}
+.btn.alt{background:var(--cream)}
+table{border-collapse:collapse;width:100%;margin:8px 0}td,th{border:2px solid var(--ink3);padding:6px 10px;text-align:left;vertical-align:top}
+th{font-family:"Silkscreen",monospace;font-size:14px;color:var(--cream2);font-weight:400}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-bottom:10px;border-bottom:2px dashed var(--ink3)}
+.logo{font-family:"Silkscreen",monospace;font-weight:700;font-size:18px;color:var(--cream);text-decoration:none;letter-spacing:1px}
+.logo b{color:var(--gold)}
+nav a{margin-left:14px;font-size:19px}
+nav a:first-child{margin-left:0}
+.hero{padding:34px 0 10px}
+.hero h1{font-size:40px}
+.tag{display:inline-block;background:var(--maroon);color:var(--cream);font-family:"Silkscreen",monospace;font-size:13px;padding:3px 10px;transform:rotate(-2deg);box-shadow:3px 3px 0 var(--shadow);margin:0 0 6px}
+.tag.gold{background:var(--gold);color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.game{display:flex;flex-direction:column;gap:6px}
+.game .head{display:flex;gap:14px;align-items:center}
+.game img{width:84px;height:84px;border-radius:20px;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--shadow);flex:none}
+.game h3{margin:0 0 4px;font-size:17px}
+.game p{margin:4px 0}
+.price{border-left:4px solid var(--gold);padding:2px 0 2px 10px;margin:8px 0}
+.appicon{width:112px;height:112px;border-radius:26px;border:3px solid var(--ink);box-shadow:5px 5px 0 var(--shadow)}
+.gamehead{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:20px}
+footer{max-width:860px;margin:0 auto;padding:18px 16px 40px;border-top:2px dashed var(--ink3);color:var(--cream2);font-size:17px}
+footer a{margin-right:14px}
+@media (max-width:520px){h1{font-size:28px}.hero h1{font-size:32px}nav a{margin-left:10px;font-size:18px}}
